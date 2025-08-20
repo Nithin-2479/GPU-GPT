@@ -1,0 +1,83 @@
+# Command:
+#  icoFoam -case /home/user/OpenFOAM/run/tutorials/cavityLaminar 
+Parse error, expected a string, found 
+    on line 17 the punctuation token '('
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  v11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : v11-9cbf94f3339d
+Exec   : icoFoam -case /home/user/OpenFOAM/run/tutorials/cavityLaminar
+Date   : Aug 20 2025
+Time   : 18:40:11
+Host   : "Nithin"
+PID    : 4302
+I/O    : uncollated
+Case   : /home/user/OpenFOAM/run/tutorials/cavityLaminar
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+--> FOAM FATAL ERROR: 
+Unknown functionEntry 'libs' in "/home/user/OpenFOAM/run/tutorials/cavityLaminar/system/controlDict" near line 17
+
+Valid functionEntries are :
+
+15
+(
+inputSyntax
+if
+includeConstraint
+inputMode
+codeStream
+include
+neg
+calc
+ifeq
+remove
+includeIfPresent
+includeEtc
+includeFunc
+includeModel
+calcInclude
+)
+
+
+    From function static bool Foam::functionEntry::execute(const Foam::word&, Foam::dictionary&, Foam::Istream&)
+    in file db/dictionary/functionEntries/functionEntry/functionEntry.C at line 206.
+
+FOAM exiting
+
+Command exited with non-zero status 1
+	Command being timed: "icoFoam -case /home/user/OpenFOAM/run/tutorials/cavityLaminar"
+	User time (seconds): 0.01
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40320
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1468
+	Voluntary context switches: 1
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

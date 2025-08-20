@@ -1,0 +1,17 @@
+Run Summary
+===========
+Case:            /home/user/OpenFOAM/run/tutorials/cavityLaminar
+Solver:          icoFoam
+Parallel:        0
+GPU ID:          0
+Duration (s):    451
+Last reported time: 370.986
+
+Recent convergence lines:
+amgxPCG:  Solving for p, Initial residual = 0, Final residual = 2.34558e-05, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.16985e-16, Final residual = 4.16985e-16, No Iterations 0
+smoothSolver:  Solving for Uy, Initial residual = 3.36473e-16, Final residual = 3.36473e-16, No Iterations 0
+amgxPCG:  Solving for p, Initial residual = 0, Final residual = 2.34558e-05, No Iterations 0
+amgxPCG:  Solving for p, Initial residual = 0, Final residual = 2.34558e-05, No Iterations 0
+
+Solver log: /home/user/OpenFOAM/run/tutorials/cavityLaminar/logs/icoFoam_20250820_185026.log

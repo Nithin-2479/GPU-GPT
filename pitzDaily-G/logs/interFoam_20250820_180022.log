@@ -1,0 +1,186 @@
+# Command:
+# interFoam -case /home/user/OpenFOAM/run/tutorials/pitzDaily 
+
+interFoam has been superseded and replaced by the more general
+incompressibleVoF solver module executed by the foamRun application:
+
+    foamRun -solver incompressibleVoF
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  v11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : v11-9cbf94f3339d
+Exec   : foamRun -solver incompressibleVoF -case /home/user/OpenFOAM/run/tutorials/pitzDaily
+Date   : Aug 20 2025
+Time   : 18:00:22
+Host   : "Nithin"
+PID    : 3835
+I/O    : uncollated
+Case   : /home/user/OpenFOAM/run/tutorials/pitzDaily
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting solver incompressibleVoF
+--> FOAM Warning : 
+    From function static Foam::typeIOobject<Foam::IOdictionary> Foam::twoPhaseMixture::readPhasePropertiesDict(const Foam::objectRegistry&)
+    in file twoPhaseMixture.C at line 143
+    Upgrading case by converting transportProperties into phaseProperties, physicalProperties.water and physicalProperties.air
+
+
+
+--> FOAM FATAL IO ERROR: 
+Unknown patchField type constantAlphaContactAngle for patch walls of type patch for field alpha.water
+
+Valid patchField types are :
+
+104
+(
+advective
+alphaFixedPressure
+calculated
+codedFixedValue
+codedMixed
+compressible::alphatJayatillekeWallFunction
+compressible::alphatWallFunction
+compressible::thermalBaffle1D<eConstSolidThermoPhysics>
+compressible::thermalBaffle1D<ePowerSolidThermoPhysics>
+contactAngle
+convectiveHeatTransfer
+cyclic
+cyclicSlip
+directionMixed
+empty
+energyJump
+entrainmentPressure
+epsilonWallFunction
+externalCoupled
+externalCoupledTemperature
+extrapolatedCalculated
+fWallFunction
+fanPressure
+fanPressureJump
+fixedEnergy
+fixedFluxExtrapolatedPressure
+fixedFluxPressure
+fixedGradient
+fixedInternalValue
+fixedJump
+fixedMean
+fixedMeanOutletInlet
+fixedPressureCompressibleDensity
+fixedProfile
+fixedUnburntEnthalpy
+fixedValue
+fixedValueInletOutlet
+freestream
+freestreamPressure
+gradientEnergy
+gradientUnburntEnthalpy
+inletOutlet
+inletOutletTotalTemperature
+interfaceCompression
+internal
+kLowReWallFunction
+kqRWallFunction
+mappedInternalValue
+mappedValue
+mappedValueAndPatchInternalValue
+mixed
+mixedEnergy
+mixedUnburntEnthalpy
+nonConformalCyclic
+nonConformalError
+nonConformalProcessorCyclic
+nutLowReWallFunction
+nutURoughWallFunction
+nutUSpaldingWallFunction
+nutUWallFunction
+nutkRoughWallFunction
+nutkWallFunction
+omegaWallFunction
+outletInlet
+outletMappedUniformInlet
+partialSlip
+phaseHydrostaticPressure
+plenumPressure
+porousBafflePressure
+pressure
+prghEntrainmentPressure
+prghPressure
+prghTotalHydrostaticPressure
+prghTotalPressure
+prghUniformDensityHydrostaticPressure
+processor
+processorCyclic
+rotatingTotalPressure
+slip
+symmetry
+symmetryPlane
+syringePressure
+timeVaryingMappedFixedValue
+totalFlowRateAdvectiveDiffusive
+totalPressure
+totalTemperature
+transonicEntrainmentPressure
+turbulentInlet
+turbulentIntensityKineticEnergyInlet
+turbulentMixingLengthDissipationRateInlet
+turbulentMixingLengthFrequencyInlet
+uniformDensityHydrostaticPressure
+uniformFixedGradient
+uniformFixedValue
+uniformInletOutlet
+uniformJump
+uniformTotalPressure
+v2WallFunction
+variableHeightFlowRate
+waveSurfacePressure
+waveTransmissive
+wedge
+zeroGradient
+zeroInletOutlet
+)
+
+
+file: /home/user/OpenFOAM/run/tutorials/pitzDaily/0/alpha.water/boundaryField/walls from line 30040 to line 30043.
+
+    From function static Foam::tmp<Foam::fvPatchField<Type> > Foam::fvPatchField<Type>::New(const Foam::fvPatch&, const Foam::DimensionedField<Type, Foam::volMesh>&, const Foam::dictionary&) [with Type = double]
+    in file lnInclude/fvPatchFieldNew.C at line 136.
+
+FOAM exiting
+
+Command exited with non-zero status 1
+	Command being timed: "interFoam -case /home/user/OpenFOAM/run/tutorials/pitzDaily"
+	User time (seconds): 0.11
+	System time (seconds): 0.02
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 92160
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 66
+	Minor (reclaiming a frame) page faults: 5815
+	Voluntary context switches: 51
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 12280
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
