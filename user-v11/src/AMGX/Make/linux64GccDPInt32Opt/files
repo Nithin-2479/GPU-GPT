@@ -1,3 +1,0 @@
-SOURCE += amgxPCGSolver.C
-
-LIB = $(FOAM_USER_LIBBIN)/libamgxFoam
