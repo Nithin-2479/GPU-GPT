@@ -1,0 +1,7 @@
+EXE_INC = \
+    -I$(HOME)/OpenFOAM/install/amgx/include
+
+LIB_LIBS = \
+    -L$(HOME)/OpenFOAM/install/amgx/lib \
+    -Wl,-rpath,$(HOME)/OpenFOAM/install/amgx/lib \
+    -lamgxsh
